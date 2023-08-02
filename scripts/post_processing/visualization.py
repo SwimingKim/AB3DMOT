@@ -109,7 +109,9 @@ def vis(args):
 
 		# generate video for the image results
 		print_log('generating video for seq %s' % (seq), log=log)
-		video_file = os.path.join(result_root, 'trk_video_vis', seq+'.mp4'); mkdir_if_missing(video_file)
+		video_file = os.path.join(result_root, 'trk_video_vis', seq+'.mp4')
+		print("path: %s" % video_file)
+		mkdir_if_missing(video_file)
 		if args.dataset == 'KITTI': framerate = 30
 		elif args.dataset == 'nuScenes': framerate = 2
 		generate_video_from_folder(save_3d_bbox_dir, video_file, framerate=framerate)
