@@ -194,7 +194,8 @@ class AB3DMOT(object):
 			ID_tmp = ID_list[count]
 			color_float = colors[int(ID_tmp) % max_color]
 			color_int = tuple([int(tmp * 255) for tmp in color_float])
-			str_vis = '%d, %f' % (ID_tmp, trk_tmp.o)
+			str_vis = 'ID : %d' % (ID_tmp)
+			# str_vis = '%d, %f' % (ID_tmp, trk_tmp.o)
 			img = vis_obj(trk_tmp, img, calib, hw, color_int, str_vis)		# blue for tracklets
 			count += 1
 		

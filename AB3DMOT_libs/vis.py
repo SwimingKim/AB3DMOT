@@ -26,7 +26,9 @@ def draw_box3d_image(image, qs, img_size=(900, 1600), color=(255,255,255), thick
 	# if 6 points of the box are outside the image, then do not draw
 	pts_outside = 0
 	for index in range(8):
-		check = check_outside_image(qs[index, 0], qs[index, 1], img_size[0], img_size[1])
+		# print("qs", qs[index][0], qs[index][1], img_size["image"])
+		# check = check_outside_image(qs[index, 0], qs[index, 1], img_size[0], img_size[1])
+		check = check_outside_image(qs[index, 0], qs[index, 1], img_size["image"][0], img_size["image"][1])
 		if check: pts_outside += 1
 	if pts_outside >= 6: return image, False
 

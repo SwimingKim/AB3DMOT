@@ -14,5 +14,5 @@ num_hypo                     : 1          # >1 to allow multi-hypothesis trackin
 
 # --------------- model.py
 ego_com                      : true      # turn on only slightly reduce speed but increase a lot for performance
-vis                          : false       # only for debug or visualization purpose, will significantly reduce speed
+vis                          : true       # only for debug or visualization purpose, will significantly reduce speed
 affi_pro                     : true
