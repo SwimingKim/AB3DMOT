@@ -106,5 +106,7 @@ results/
 deprecated/
 tmp/*
 
-data/KITTI/tracking/training
-data/KITTI/tracking/testing
+data/KITTI/tracking
+# data/KITTI/tracking/training
+# data/KITTI/tracking/testing
+data/nuScenes/nuKITTI
